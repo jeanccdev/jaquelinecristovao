@@ -1,0 +1,12 @@
+{{#each dados}}
+    <section id="post">
+            <h4>{{this.titulo}}</h4>
+            <div>
+                <img src="posts/{{this.imagem}}" alt="{{this.titulo}}">
+                {{{this.texto}}}. . . <a href='/{{this.caminho}}'>Continue Lendo</a>
+            </div>
+            <br>
+            
+            <font color="#aaa">Atualizado em: {{this.dia}}</font>
+    </section>
+{{/each}}

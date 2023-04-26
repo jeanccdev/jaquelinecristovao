@@ -1,0 +1,169 @@
+/* CSS Principal */
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: calibri;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+header img {
+    width: 200px;
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 10px;
+    background: none;
+    border: 0;
+    font-size: 22px;
+    cursor: pointer;
+    border-bottom: 3px solid #cbf2c5;
+    transition: all 0.8s;
+}
+
+header nav a:hover {
+    border-bottom: 3px solid #00773a;
+}
+
+.paginaSelecionada {
+    border-bottom: 3px solid #00773a;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #cbf2c5;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #cbf2c5;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    margin: 15px 0;
+    padding: 15px 30px;
+    background-color: white;
+}
+
+/* Página Inicial */
+/* Apresentação */
+#apresentacao {
+    flex-direction: row;
+}
+
+#apresentacao img {
+    width: 250px;
+    margin: 0 30px 0 15px;
+    border-radius: 50%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: #004b24;
+    padding: 15px;
+}
+
+/* Serviços */
+#servicos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #00773a;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Últimos Posts */
+#ultimosposts div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#ultimosposts div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 15px;
+}
+
+#ultimosposts div div img {
+    width: 220px;
+}
+
+/* Página Sobre */
+#sobre {
+    display: flex;
+    justify-content: start ;
+    align-items: flex-start;
+}
+
+/* Página Blog */
+#post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#post div {
+    width: 100%;
+    margin: 0 15px;
+    position: relative;
+}
+
+#post a {
+    padding: 15px 20px;
+    background-color: #00773a;
+    color: white;
+}
+
+#post div img {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 20px 20px 20px 0;
+}
