@@ -167,3 +167,44 @@ ul li::before {
     height: 220px;
     margin: 20px 20px 20px 0;
 }
+
+/* Página Admin */
+section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section form input {
+    margin: 5px 0;
+}
+
+section form input[type=submit] {
+    padding: 10px 20px;
+    background-color: #004b24;
+    cursor: pointer;
+    color: white;
+}
+
+/* Painel de controle */
+.painel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-direction: column;
+}
+
+.painel div a {
+    padding: 15px 20px;
+    background-color: #00773a;
+    color: white;
+    margin: 15px;
+}
+
+.painel div img {
+    float: left;
+    width: 220px;
+    height: 220px;
+    margin: 20px 20px 20px 0;
+}

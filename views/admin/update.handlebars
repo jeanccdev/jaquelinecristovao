@@ -1,0 +1,15 @@
+{{#each post}}
+    <section class='painel'>
+        <div>
+            <img src='posts/{{this.imagem}}' alt='{{this.titulo}}'>
+            <form action='/admin/{{this.caminho}}' method='post'>
+                Título:
+                <input type='text' name='titulo' id='titulo' value='{{{this.titulo}}}'>
+                Texto:
+                <textarea name='texto' id='texto' cols='70' rows='20'>{{{this.texto}}}</textarea>
+                <input type='hidden' name='post' value='{{this.caminho}}'>
+                <input type='submit' value='Atualizar'>
+            </form>
+        </div>
+    </section>
+{{/each}}

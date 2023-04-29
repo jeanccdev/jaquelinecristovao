@@ -1,0 +1,13 @@
+{{#each posts}}
+    <section class="painel">
+            ID: {{this.id}}
+            <h4>{{this.titulo}}</h4>
+            <div>
+                <img src="posts/{{this.imagem}}" alt="{{this.titulo}}">
+                {{{this.texto}}}. . . <br><br><a href='/admin/{{this.caminho}}'>Editar</a><a href="/admin/delete/{{this.caminho}}">Excluir</a>
+            </div>
+            <br>
+            
+            <font color="#aaa">Atualizado em: {{this.dia}}</font>
+    </section>
+{{/each}}
