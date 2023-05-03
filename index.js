@@ -20,6 +20,6 @@
     app.use('/admin', adminRoutes)
 
 // Rodando app
-    app.listen(3000, () => {
+    app.listen(process.env.PORT || 8089, () => {
         console.log('Servidor iniciado na porta 3000');
     })
