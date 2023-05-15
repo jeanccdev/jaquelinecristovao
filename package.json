@@ -10,13 +10,17 @@
     "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.2.4",
+    "now": "^21.0.1",
     "path": "^0.12.7"
   },
   "name": "jaquelinenovo",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
